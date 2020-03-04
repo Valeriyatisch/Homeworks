@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Добавить статью</title>
+</head>
+
+<body>
+	<form id="addart" name="add_art" action="#" method="post">
+		<h2>Добавить статью</h2>
+		
+		<fieldset>
+			<legend>Автор статьи</legend>
+			
+			<label for="name">ФИО:</label>
+			<input id="name" name="fio" type="text" maxlength="50" required>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Описание статьи</legend>
+			
+			<div>
+			<label for="name">Название:</label>
+			<input id="name" name="name" type="text" maxlength="100" required>
+			</div>
+			
+			<div>
+			<label for="topic">Тема:</label>
+			<input id="topic" name="topic" type="text" maxlength="100" required>
+			</div>
+
+			
+			<label for="description">Текст статьи:</label>
+			<textarea id="description" name="description" maxlength="10000" required wrap="hard"></textarea>			
+		</fieldset>
+		
+		<fieldset>
+			<legend>Фотографии к статье</legend>
+			
+			<label for="photo">Фото:</label>
+			<input id="photo" name="photo[]" multiple type="file" accept="image/*">
+		</fieldset> 
+		
+	</form>	
+	
+	<button type="submit" form="addart" >Опубликовать</button>
+
+</body>
+
+</html>
