@@ -1,0 +1,95 @@
+﻿body{
+	background-image:url('../img/wp.jpg');
+	background-attachment: fixed;
+	background-size: 100%  100%;
+}
+
+
+nav{
+	text-align:center;
+}
+
+.container{
+	max-width: 960px; 
+	margin: 0 auto;
+}
+
+a.head
+{
+	font-size:20px;
+	margin-left: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+.button
+{
+	background: blue;
+	width: 100px;
+	height: 20px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-align:center;
+	
+}
+
+.button a
+{
+	color: white;
+	text-decoration: none;
+}
+
+a.author{
+	color: white;
+}
+
+img{
+	width: 100%;
+	height:auto;
+}
+
+h1{
+	color:black;
+}
+
+h3{
+	align: right;
+	font-family: sans-serif;
+}
+
+p{
+	font-size: 18px;
+	text-align:justify;
+	font-family: sans-serif;
+}
+
+.article{
+	margin-bottom: 50px;
+
+}
+
+
+.date{
+	text-align:right;
+	color:blue;
+}
+
+ul{
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.letter{
+	font-style: italic;
+}
+
+footer{
+	text-align:center;
+}
+
+.foot{
+	font-size:20px;
+	margin-left: 50px;
+	color: white;
+	text-decoration: none;
+}
