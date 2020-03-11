@@ -1,0 +1,44 @@
+﻿
+.flex-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+}
+
+.flex-6{
+	flex: 50%;
+}
+
+.flex-1{
+	flex: 1;
+}
+
+.right{
+	padding-right: 10px;
+}
+
+.left{
+	padding-left: 10px;
+}
+ 
+ .flex-row2{
+	width: 960px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	margin-bottom: 50px;
+}

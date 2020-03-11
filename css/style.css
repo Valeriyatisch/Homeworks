@@ -1,13 +1,11 @@
-﻿body{
+﻿@import url('flex.css');
+
+body{
 	background-image:url('../img/wp.jpg');
 	background-attachment: fixed;
 	background-size: 100%  100%;
 }
 
-
-nav{
-	text-align:center;
-}
 
 .container{
 	max-width: 960px; 
@@ -17,7 +15,6 @@ nav{
 a.head
 {
 	font-size:20px;
-	margin-left: 50px;
 	color: white;
 	text-decoration: none;
 }
@@ -53,7 +50,6 @@ h1{
 }
 
 h3{
-	align: right;
 	font-family: sans-serif;
 }
 
@@ -93,3 +89,4 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+
