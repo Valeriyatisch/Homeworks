@@ -11,11 +11,22 @@
 
 <body>
 	<header>
-		<nav class="container flex-header">
-			<a class="head" href="main.html">Главная</a>
-			<a class="head" href="blog.html">О блоге</a>
-			<a class="head" href="countries.html">Страны</a>
-			<a class="head" href="gallery.html">Галерея</a>
+		<nav class="container">
+		<ul class="menu flex-header">
+			<li><a class="head" href="main.html">Главная</a></li>
+			<li><a class="head" href="blog.html">О блоге</a></li>
+			<li><a class="head more" href="countries.html">Страны</a>
+				<ul class="submenu">
+					<li><a href="#">Италия</a></li>
+					<li><a href="#">Испания</a></li>
+					<li><a href="#">Турция</a></li>
+					<li><a href="#">Египет</a></li>
+					<li><a href="#">Франция</a></li>
+			</ul>
+			</li>
+			<li><a class="head" href="gallery.html">Галерея</a></li>
+			<li><a class="head" href="#auth">Войти</a>
+			</ul>
 		</nav>
 	</header>
 	
@@ -28,7 +39,7 @@
 		открывают новые горизонты. Я могу сочетать путешествия со своей работой, потому что для работы мне нужен только ноутбук и интернет. 
 		Путешествия помогают черпать вдохновение для моего творчества. Практикую йогу и делюсь своими знаниями с другими людьми.</p>
 		<h3>На этом сайте вы найдете:</h3>
-		<ul>
+		<ul class="blog">
 			<li>Cтатьи о моих путешествиях по миру</li>
 			<li>Лайфхаки про путешествия</li>
 			<li>Фотографии из поездок</li>
@@ -42,6 +53,16 @@
 		Я прошу вас, не цепляться к мелочам и деталям, типа неправильного написания сложных названий. Постарайтесь посмотреть на мой отчет шире. 
 		Я не отношусь предвзято к вашему любимому месту. Я пишу о нем так, как Я его увидела. Буду благодарна вам, если вы сможете указать 
 		на конкретные неточности в моем рассказе, чтобы я могла внести исправления.</p>
+		
+		<section class="modal" id="auth">
+            <form class="flex-column" name="auth" action="#" method="post">
+            	<a class="close-modal" href="#0">x</a>
+                <input class="place" type="email" name="email" placeholder="your e-mail">
+                <input class="place" type="password" name="psw" placeholder="password">
+                <input class="place" type="submit" value="Войти">
+            </form>
+        </section>
+		
 	</main>
 	
 	<footer>

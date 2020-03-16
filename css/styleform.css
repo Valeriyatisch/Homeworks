@@ -1,0 +1,43 @@
+﻿input:optional{
+	background: whitesmoke;
+	color: blue;
+}
+
+textarea:invalid, input[type=text]:invalid{
+    border: 1px solid red;
+}
+
+textarea:valid, input[type=text]:valid{
+    border: 1px solid green;
+}
+
+
+form :required:focus:valid + span:after,
+form :required:not(:focus):valid + span:after{
+    content: "\2714";
+    font-weight: bolder;
+    color: green;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+	background: aqua;
+}
+
+input[type=submit]:hover{
+	background: aqua;
+}
+
+form :focus{
+	background: #e1e7ff;
+}
+
+form :required + span:before{
+	content: "*";
+	color: black;
+}
+
+input:checked + label{
+	color: lime;
+}

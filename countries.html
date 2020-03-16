@@ -10,13 +10,25 @@
 
 <body>
 	<header>
-		<nav class="container flex-header">
-			<a class="head" href="main.html">Главная</a>
-			<a class="head" href="blog.html">О блоге</a>
-			<a class="head" href="countries.html">Страны</a>
-			<a class="head" href="gallery.html">Галерея</a>
+		<nav class="container">
+		<ul class="menu flex-header">
+			<li><a class="head" href="main.html">Главная</a></li>
+			<li><a class="head" href="blog.html">О блоге</a></li>
+			<li><a class="head more" href="countries.html">Страны</a>
+				<ul class="submenu">
+					<li><a href="#">Италия</a></li>
+					<li><a href="#">Испания</a></li>
+					<li><a href="#">Турция</a></li>
+					<li><a href="#">Египет</a></li>
+					<li><a href="#">Франция</a></li>
+			</ul>
+			</li>
+			<li><a class="head" href="gallery.html">Галерея</a></li>
+			<li><a class="head" href="#auth">Войти</a>
+			</ul>
 		</nav>
 	</header>
+
 	
 	<main class="container">
 		<div>
@@ -91,6 +103,16 @@
 			</div>
 			</div>
 		</div>
+		
+		<section class="modal" id="auth">
+            <form class="flex-column" name="auth" action="#" method="post">
+            	<a class="close-modal" href="#0">x</a>
+                <input class="place" type="email" name="email" placeholder="your e-mail">
+                <input class="place" type="password" name="psw" placeholder="password">
+                <input class="place" type="submit" value="Войти">
+            </form>
+        </section>
+
 	</main>
 	
 	<footer>

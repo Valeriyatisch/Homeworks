@@ -53,3 +53,23 @@
 	align-content: center;
 	margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+
+ul, li{
+	margin: 0;
+padding: 0;
+}
+
+
+nav li{
+	list-style-type: none;
+	
+
+}

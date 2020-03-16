@@ -1,5 +1,7 @@
 ﻿@import url('flex.css');
 @import url('gallery.css');
+@import url('styleform.css');
+
 
 body{
 	background-image:url('../img/wp.jpg');
@@ -13,9 +15,10 @@ body{
 	margin: 0 auto;
 }
 
-a.head
+a.head 
 {
-	font-size:20px;
+	font-size: 18px;
+	font-family: serif;
 	color: white;
 	text-decoration: none;
 }
@@ -31,11 +34,14 @@ a.head
 	
 }
 
+
 .button a
 {
 	color: white;
 	text-decoration: none;
 }
+
+
 
 a.author{
 	color: white;
@@ -71,9 +77,23 @@ p{
 	color:blue;
 }
 
-ul{
+ul.blog{
 	font-size: 18px;
 	font-family: sans-serif;
+	margin-left: 50px;
+}
+
+
+ul.menu{
+	font-size: 18px;
+	font-family: sans-serif;
+	margin-top: 1%;
+
+}
+
+.submenu li{
+	padding: 5px;
+	border-bottom: 1px solid white;
 }
 
 .letter{
@@ -91,3 +111,66 @@ footer{
 	text-decoration: none;
 }
 
+.menu li a:hover{
+	color: aqua;
+}
+
+.submenu a{
+	font-family: serif;
+	color: white;
+	text-decoration: none;
+}
+
+.more{
+	position: relative;
+}
+
+.submenu{
+	position: absolute;
+	opacity: 0;
+	
+}
+	
+.more:hover .submenu{
+	opacity: 1;
+}
+	
+	
+/*---------------------Форма авторизации в модальном окне--------------------------------------*/
+
+.modal{
+    position: absolute;
+    left: 50%;
+    background: whitesmoke;
+    padding: 30px;
+
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+.modal:target{
+    top: 50%;
+}
+
+.modal:not(:target){
+    top: -50%;
+}
+
+.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.place{
+	margin-bottom: 7px;
+	border: 1px solid blue;
+}
+
+	
+	
+	
+	
+	
