@@ -1,6 +1,4 @@
-﻿
-@media screen and (min-width: 720px){
-    .flex-row{
+﻿ .flex-row{
     display: flex;
     /*flex-wrap: wrap;*/
 }
@@ -23,4 +21,26 @@ img{
     height: auto;
 }
 
+
+@media screen and (min-width: 480px) and (max-width: 770px){
+   .flex-s-6{
+       flex: 50%;
+   }
+   
+.wrap-s{
+    flex-wrap: wrap;
+}
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .flex-xs-12{
+        flex: 100%;
+    }
+
+    .wrap-xs{
+        flex-wrap: wrap;
+    }
 }
