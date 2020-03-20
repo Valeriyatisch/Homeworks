@@ -16,7 +16,7 @@ form :required:focus:valid + span:after,
 form :required:not(:focus):valid + span:after{
     content: "\2714";
     font-weight: bolder;
-    color: green;
+    color: lime;
     margin-left: 10px;
     font-size: 20px;
 }
@@ -26,6 +26,9 @@ button:hover{
 }
 
 input[type=submit]:hover{
+	background: aqua;
+}
+
 	background: aqua;
 }
 

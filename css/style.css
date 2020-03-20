@@ -139,10 +139,12 @@ footer{
 /*---------------------Форма авторизации в модальном окне--------------------------------------*/
 
 .modal{
-    position: absolute;
+    position: fixed;
     left: 50%;
     background: whitesmoke;
     padding: 30px;
+    box-shadow: 0 0 1em rgba(0,0,0,0.5);
+    border-radius: 5px;
 
     transform: translate(-50%, -50%);
     transition: all 1s;
@@ -162,13 +164,37 @@ footer{
     right: 10px;
     text-decoration: none;
     font-family: sans-serif;
+    color: #1e90ff;
 }
 
 .place{
 	margin-bottom: 7px;
 	border: 1px solid blue;
+	
 }
 
+.place:focus{
+	background: #e1e7ff;
+}
+
+
+input[type=submit].place{
+	background: #1e90ff;
+	border: none;
+	color: white;
+	padding: 7px;
+	border-radius: 5px;
+
+}
+
+input[type=submit].place:hover{
+	background: #2a52be;
+}
+
+.close-modal:hover{
+	color: #2a52be;
+
+}
 	
 	
 	
